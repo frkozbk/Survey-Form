@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <main id="main">
+        <p id="description">Help us get to know you better.</p>
+        <form id="survey-form">
+            <label for="name">* Name:</label>
+            <input id="name" type="text" placeholder="Enter your name" validate />
+            <label for="email">* Email:</label>
+            <input id="email" type="email" placeholder="Enter your e-mail" />
+            <label for="age">* Age:</label>
+            <input id="age" type="number" placeholder="Age" min="1" max="125" />
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="currentRole" id="dropdown">
+                <option disabled value="">Selec an option</option>
+                <option value="student"> Student</option>
+                <option value="job">Full time job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+
+
+
+            </select>
+            <label>* How likely is that you would recommend our site to your friend?</label>
+            <ul style="list-style: none;text-align: left;margin-top: 15px; ">
+                <li class="radio"><label style="margin-top:0px;">Definitely<input class="userRatings"
+                            name="radio-buttons" type="radio" value="1" /></label>
+                </li>
+                <li class="radio"><label>Maybe<input class="userRatings" name="radio-buttons" type="radio"
+                            value="1" /></label>
+                </li>
+                <li class="radio"><label>Not Sure<input class="userRatings" name="radio-buttons" type="radio"
+                            value="1" /></label>
+                </li>
+            </ul>
+            <label for="dropdown">What do you like most in FCC</label>
+            <select name="currentRole" id="dropdown">
+                <option disabled value="">Selec an option</option>
+                <option value="content">Our Content</option>
+                <option value="authors">Our Authors</option>
+                <option value="community">Our Community</option>
+            </select>
+            <label for="preferences">Things that should be improved in the future
+                <br />
+                (Check all that apply):</label>
+            <ul id="preferences" style="list-style: none;margin-top: 15px;">
+                <li class="radio">
+                    <label>
+                        <input class="userRatings" name="prefer" value="1" type="checkbox" />
+                        Our Content
+                    </label>
+
+                </li>
+                <li class="radio">
+                    <label>
+                        <input class="userRatings" name="prefer" value="1" type="checkbox" />
+                        Our Authors
+                    </label>
+
+                </li>
+                <li class="radio">
+                    <label>
+                        <input class="userRatings" name="prefer" value="1" type="checkbox" />
+                        Our Community
+                    </label>
+
+                </li>
+            </ul>
+            <label for="suggestions">
+                Any Comments or Suggestions?
+            </label>
+            <textarea id="suggestions" placeholder="Enter your comment here..."></textarea>
+            <button type="submit"> Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
